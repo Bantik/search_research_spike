@@ -16,7 +16,7 @@ Setup
 
 * Bundle to install mongoid_search and tire
 * Download, install, and launch Elasticsearch following the directions at http://www.elasticsearch.org/overview/#installation
-* Run the seed rake task to generate your sample data:
+* Run the seed rake task to generate your sample data (will take about an hour)
 
     rake db:seed
 
