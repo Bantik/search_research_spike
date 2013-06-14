@@ -27,15 +27,15 @@ Setup
 
 * Run the seed rake task to generate your sample data (will take about an hour)
 
-    rake db:seed
+    `rake db:seed`
 
 * Run the rake task to create an index for mongoid_search:
 
-    rake mongoid_search:index
+    `rake mongoid_search:index`
 
 * Run the rake task to populate the Elasticsearch index:
 
-    rake benchmark:backfill_elasticsearch
+    `rake benchmark:backfill_elasticsearch`
 
 Benchmarking
 ------------
