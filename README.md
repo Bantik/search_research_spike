@@ -18,14 +18,12 @@ Install Elasticsearch
 
 * Unzip/unarchive the file
 
-* Run this command:
-
-    bin/elasticsearch -f
+* Run this command from the unarchived directory in Terminal: `bin/elasticsearch -f`
 
 Setup
 -----
 
-* Bundle to install mongoid_search, tire, and other dependencies
+* `bundle` to install mongoid_search, tire, and other dependencies
 
 * Run the seed rake task to generate your sample data (will take about an hour)
 
@@ -52,9 +50,9 @@ You can also run benchmarks individually:
     rake benchmark:fulltext_search
     rake benchmark:elastic_search
 
-The Good Stuff
---------------
+Results
+-------
 
-Nicely formatted results from the benchmarking are available in the _/output_ folder in Numbers and PDF formats. Dying to know who won? It was Elasticsearch. :)
+Nicely formatted results from the benchmarking are available in the _/output_ folder in Numbers and PDF formats.
 
 
