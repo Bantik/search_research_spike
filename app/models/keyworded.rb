@@ -31,11 +31,18 @@ class Keyworded
   end
 
   def self.search_with_elastic(keywords)
-    search(keywords.to_a * ' ', :load => true)
+    if results = Tire.search('keywordeds'){ |search| search.query{ |query| query.string(keywords.to_a * ' ') }.results }.results
+      results.map(&:id)
+    else
+      []
+    end
   end
 
   def to_indexed_json
-    self.to_json
+    {
+      :id   => self.id,
+      :keywords => self.keywords
+    }.to_json
   end
 
 end
