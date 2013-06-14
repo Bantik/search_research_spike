@@ -11,11 +11,22 @@ This involves comparing the following:
 
 Note that full-text searching is built into the most recent version of MongoDB, but at the time of this writing this was not a viable alternative as 10gen's documentation warned against using it in production environments and the version of Mongoid that supports this feature requires Rails 4, which is currently still in RC status.
 
+Install Elasticsearch
+---------------------
+
+* Download from http://www.elasticsearch.org/download/
+
+* Unzip/unarchive the file
+
+* Run this command:
+
+    bin/elasticsearch -f
+
 Setup
 -----
 
-* Bundle to install mongoid_search and tire
-* Download, install, and launch Elasticsearch following the directions at http://www.elasticsearch.org/overview/#installation
+* Bundle to install mongoid_search, tire, and other dependencies
+
 * Run the seed rake task to generate your sample data (will take about an hour)
 
     rake db:seed
